@@ -1,0 +1,44 @@
+.container {
+    height: 30vh;
+    width: 100%;
+    background-color: #212529;
+    color: #F8F9FA80;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.line {
+    border-top: 1px solid #F8F9FA80;
+    width: 100%;
+    display: block;
+    width: 90%;
+}
+
+.first, .second {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.center, .left, .right {
+    display: flex;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    font-size: 0.75rem
+}
+
+.vence {
+    color: #F8F9FA;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.dott {
+    color: #DDBEA9;
+}
