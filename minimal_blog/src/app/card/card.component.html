@@ -1,1 +1,18 @@
-<p>card works!</p>
+<div *ngFor="let item of content" class="grid card">
+    <div class="col-5">
+        <img [src]="item.img" alt="card1">
+    </div>
+    <div class="col-4 text">
+        <div class="date">
+            <span>{{ item.date }}</span>
+        </div>
+        <div class="content">
+            <span class="title">{{ item.title }}</span>
+            <p class="desc">{{ item.desc }}.</p>
+        </div>
+        <div class="line"></div>
+        <div class="author">
+            <span>{{ item.author }}</span><span class="likes"><i class="pi pi-heart"></i> {{ item.num }}</span>
+        </div>
+    </div>
+</div>

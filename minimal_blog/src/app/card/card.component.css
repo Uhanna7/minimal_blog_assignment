@@ -1,0 +1,29 @@
+.card {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.date, .desc, .author {
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+.title {
+    font-weight: 500 bold;
+    font-size: 1rem;
+    line-height: 1.5625rem;
+}
+
+.line {
+    border-top: 1px solid #E5E5E5;
+    width: 100%;
+    display: block;
+}
+
+.text {
+    float: left;
+}
+
+.likes {
+    float: right;
+}
