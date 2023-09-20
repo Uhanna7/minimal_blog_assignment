@@ -1,4 +1,6 @@
 .container {
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -7,11 +9,13 @@
     line-height: 1.5625rem;
 
     .login {
+        width: 100%;
         font-weight: 500;
         font-size: 0.75rem;
     }
 
     .vence {
+        width: 100%;
         font-weight: 700;
         font-size: 1.125rem;
     }
@@ -19,9 +23,7 @@
 
 .mini-container {
     display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     .button {
         width: 6.25rem;
@@ -39,6 +41,7 @@
 }
 
 .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -58,6 +61,10 @@
 
 #res {
     color: #495057;
+}
+
+.dott {
+    color: #DDBEA9;
 }
 
 
