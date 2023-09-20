@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  linkItems: string[];
+
+  constructor() {
+    this.linkItems = [
+      '<a id="res" href="..\app.component.html">Resources</a>',
+      '<a>Inspiration<i class="pi pi-angle-down"></i></a>',
+      '<a>Courses<i class="pi pi-angle-down"></i></a>',
+      '<a>Blog</a>'
+    ];
+  }
+
+
 }

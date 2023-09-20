@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 1.5625rem;
+
+    .login {
+        font-weight: 500;
+        font-size: 0.75rem;
+    }
+
+    .vence {
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+}
+
+.mini-container {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+        width: 6.25rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #activeButton {
+        border-radius: 1.25rem;
+        background-color: #DDBEA9;
+        color: #F8F9FA;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+
+    .links {
+        width: 4.875rem;
+        height: 1.5625rem;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif !important;
+        line-height: 1.5625rem;
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: #49505780;
+    }
+}
+
+#res {
+    color: #495057;
+}
+
+
