@@ -1,0 +1,41 @@
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#img {
+    z-index: 1;
+}
+
+.text {
+    z-index: 100;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+}
+
+#text1 {
+    position: absolute; 
+    top: 48%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+
+#text2 {
+    position: absolute; 
+    top: 52%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 2.5rem;
+}
+
+.space {
+    height: 2rem;
+}
