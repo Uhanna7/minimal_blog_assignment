@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class CategoriesComponent {
 
+listItems: string[];
+
+constructor() {
+  this.listItems = [
+    'Career & Success',
+    'Personal Development',
+    'Communication Skills',
+    'Leadership & Management',
+    'Relationships',
+    'Self-Care & Mindfulness'
+  ]
+}
+
 }

@@ -1,0 +1,29 @@
+.container {
+    width: 65%;
+    float: right;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 2.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
+}
+
+.search {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.5625rem;
+}
