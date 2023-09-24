@@ -1,8 +1,8 @@
-<div *ngFor="let item of content" class="grid card">
-    <div class="col-5">
-        <img [src]="item.img" alt="card1">
+<div *ngFor="let item of content" class="flex card">
+    <div class="flex flex-column img">
+        <img [src]="item.img" alt="card image">
     </div>
-    <div class="col-4 text">
+    <div class="flex flex-column text">
         <div class="date">
             <span>{{ item.date }}</span>
         </div>
