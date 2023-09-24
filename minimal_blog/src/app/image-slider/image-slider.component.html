@@ -1,7 +1,18 @@
 <div class="container">
-    <div class="image">
-        <img id="img" src="../assets/blog.png" alt="background image">
-        <span id="text1" class="text">Tomas Edwardo</span>
-        <p id="text2" class="text">Instagram artists with great <br> photography skills</p>
-    </div>
+    <div class="slider">
+        <div *ngFor="let image of images; let i = index" class="slide" [ngClass]="{ 'active': i === currentIndex }">
+            <img *ngIf="i === currentIndex" [src]="image" alt="Slide">
+        </div>
+        <div class="content">
+            <div class="flex fole">
+                <button (click)="prevSlide()"><i class="pi pi-chevron-left"></i></button>
+                <div class="text">
+                    <span id="text1" class="text">Tomas Edwardo</span>
+                    <p id="text2" class="text">Instagram artists with great <br> photography skills</p>
+                </div>
+                <button (click)="nextSlide()"><i class="pi pi-chevron-right"></i></button>
+            </div>
+        </div>
+      </div>
 </div>
+  
