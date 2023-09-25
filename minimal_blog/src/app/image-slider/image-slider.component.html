@@ -1,18 +1,23 @@
 <div class="flex justify-content-center align-items-center container">
-    <div class="flex flex-wrap justify-content-center align-items-center slider">
+    <div class="flex flex-wrap justify-content-center align-items-center slider" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
         <div *ngFor="let image of images; let i = index" class="slide" [ngClass]="{ 'active': i === currentIndex }">
             <img *ngIf="i === currentIndex" [src]="image" alt="Slide">
         </div>
         <div class="content">
-            <div class="flex flex-row flex-nowrap justify-content-between up">
-                <button (click)="prevSlide()"><i class="pi pi-chevron-left"></i></button>
-                <div class="text">
-                    <span id="text1" class="text">Tomas Edwardo</span>
-                    <p id="text2" class="text">Instagram artists with great <br> photography skills</p>
+            <div class="flex flex-column up">
+                <div class="flex align-items-center justify-content-center">
+                    <span class="text text1" [ngClass]="{'small1': isPhonePortrait}">Tomas Edwardo</span>
                 </div>
-                <button (click)="nextSlide()"><i class="pi pi-chevron-right"></i></button>
+                <div class="flex align-items-center justify-content-between">
+                    <i class="pi pi-chevron-left" (click)="prevSlide()"></i>
+                    <p class="text text2" [ngClass]="{'small2': isPhonePortrait}">Instagram artists with great <br> photography skills</p>
+                    <i class="pi pi-chevron-right" (click)="nextSlide()"></i>
+                </div>
+                <div class="flex justify-content-center">
+                    <div class="flex align-content-center line"></div>
+                    <div class="page"> 1/5</div>
+                </div>
             </div>
         </div>
       </div>
 </div>
-  

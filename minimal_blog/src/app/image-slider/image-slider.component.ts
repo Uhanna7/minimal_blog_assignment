@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-image-slider',
   templateUrl: './image-slider.component.html',
   styleUrls: ['./image-slider.component.css'],
 })
-export class ImageSliderComponent {
+export class ImageSliderComponent implements OnInit {
   images: string[] = [
     '../assets/blog.png',
     '../assets/blog1.png',
@@ -14,10 +15,20 @@ export class ImageSliderComponent {
     '../assets/blog4.png',
   ];
   currentIndex: number = 0;
+  isPhonePortrait = false;
 
-  constructor() {}
+  constructor(private responsive: BreakpointObserver) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.responsive.observe(Breakpoints.HandsetPortrait).subscribe((result) => {
+      this.isPhonePortrait = false;
+
+      if (result.matches) {
+        this.isPhonePortrait = true;
+        console.log('appban vagyok');
+      }
+    });
+  }
 
   prevSlide() {
     if(this.currentIndex === 0) {
