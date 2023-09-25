@@ -1,5 +1,5 @@
 <div class="grid container">
-    <div class="content">
+    <div class="content" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
         <div class="title">
             <div>Choose what you’d like to learn from hundreds of topics:</div>
         </div>
@@ -8,7 +8,7 @@
                 <li *ngFor="let item of listItems" class="item">+ {{ item }}</li>
             </ul>
         </div>
-        <div class="search">
+        <div class="opacity-60 search">
             <span><i class="pi pi-search"></i> Search Topic</span>
         </div>
     </div>

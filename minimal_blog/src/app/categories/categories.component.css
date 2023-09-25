@@ -6,7 +6,12 @@
 
 .content {
     float: right;
-    margin-left: 25rem;
+    margin-left: 30rem;
+}
+
+.content.is-phone-portrait {
+    margin: 0 0 2rem 1.5rem;
+    justify-content: center;
 }
 
 .title {

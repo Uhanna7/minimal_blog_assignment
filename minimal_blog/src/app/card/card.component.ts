@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   content: {
     img: string;
     date: string;
@@ -23,7 +24,10 @@ export class CardComponent {
     '../assets/card5.png',
   ];
 
-  constructor() {
+  isPhonePortrait = false;
+  
+
+  constructor(private responsive: BreakpointObserver) {
     for (let i = 0; i < this.images.length; i++) {
       this.content.push({
         img: this.images[i],
@@ -34,5 +38,18 @@ export class CardComponent {
         num: 175,
       });
     }
+  }
+
+  ngOnInit() {
+    this.responsive.observe(Breakpoints.HandsetPortrait)
+      .subscribe(result => {
+
+        this.isPhonePortrait = false; 
+
+        if (result.matches) {
+          this.isPhonePortrait = true;
+        }
+
+    });
   }
 }

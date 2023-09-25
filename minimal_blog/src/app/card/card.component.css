@@ -1,8 +1,26 @@
 @import '../../assets/font.css';
 
 .card {
-    column-gap: 2rem;
+    gap: 2rem;
     font-family: 'Poppins' !important;
+}
+
+.card.is-phone-portrait {
+    flex-wrap: wrap;
+}
+
+.text {
+    float: left;
+    margin-right: 30rem;
+}
+
+.text, .img {
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.text.is-phone-portrait, .img.is-phone-portrait {
+    margin: 0 0 0 1rem;
 }
 
 .date, .desc, .author {
@@ -21,15 +39,6 @@
     border-top: 1px solid #E5E5E5;
     width: 100%;
     display: block;
-}
-
-.text {
-    float: left;
-    margin-right: 25rem;
-}
-
-.text, .img {
-    margin-bottom: 2rem;
 }
 
 .likes {

@@ -1,8 +1,8 @@
-<div *ngFor="let item of content" class="flex card">
-    <div class="flex flex-column img">
+<div *ngFor="let item of content" class="flex card" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
+    <div class="flex img" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
         <img [src]="item.img" alt="card image">
     </div>
-    <div class="flex flex-column text">
+    <div class="flex text" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
         <div class="date">
             <span>{{ item.date }}</span>
         </div>

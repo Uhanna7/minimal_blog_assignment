@@ -14,3 +14,16 @@ app-image-slider {
 app-categories, app-card {
     height: 45vh;
 }
+
+.columns {
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.columns.is-phone-portrait {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+}
