@@ -1,6 +1,11 @@
 @import '../../assets/font.css';
 
 .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
     width: 100%;
     height: 100%;
     font-family: 'Poppins' !important;
@@ -12,17 +17,34 @@
         font-size: 0.75rem;
     }
 
+    .login.small {
+        font-size: 0.25rem;
+    }
+
     .vence {
         width: 100%;
         font-weight: 700;
         font-size: 1.125rem;
     }
+
+    .vence.is-phone-portrait {
+        justify-content: center;
+    }
+}
+
+.container.is-phone-portrait {
+    flex-direction: column;
 }
 
 .mini-container {
     .button {
         width: 6.25rem;
         height: 2.5rem;
+    }
+
+    .button.small {
+        width: 3rem;
+        height: 1.5rem;
     }
 
     #activeButton {
@@ -45,6 +67,15 @@
         font-size: 0.75rem;
         color: #49505780;
     }
+
+    .links.small {
+        font-size: 0.25rem;
+    }
+}
+
+.nav.is-phone-portrait {
+    display: flex;
+    flex-direction: column;
 }
 
 #res {

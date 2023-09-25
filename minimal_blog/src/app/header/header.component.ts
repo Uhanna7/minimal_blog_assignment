@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
-
+export class HeaderComponent implements OnInit {
   linkItems: string[];
+  isPhonePortrait = false;
 
-  constructor() {
+
+  constructor(private responsive: BreakpointObserver) {
     this.linkItems = [
       '<a id="res" href="..\app.component.html">Resources</a>',
       '<a>Inspiration<i class="pi pi-angle-down"></i></a>',
@@ -18,5 +20,15 @@ export class HeaderComponent {
     ];
   }
 
+  ngOnInit() {
+    this.responsive.observe(Breakpoints.HandsetPortrait).subscribe((result) => {
+      this.isPhonePortrait = false;
+
+      if (result.matches) {
+        this.isPhonePortrait = true;
+        console.log('appban vagyok');
+      }
+    });
+  }
 
 }

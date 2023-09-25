@@ -1,16 +1,16 @@
-<div class="flex flex-row flex-nowrap justify-content-between container">
-    <div class="vence">
+<div class="flex container" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
+    <div class="flex align-items-center vence" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
         <span>VENCE<span class="dott">.</span></span>
     </div>
-    <div class="flex flex-wrap justify-content-between gap-4 nav">
-        <div class="links" *ngFor="let link of linkItems" [innerHtml]="link"></div>
+    <div class="flex flex-wrap justify-content-between align-items-center nav" [ngClass]="{'is-phone-portrait': isPhonePortrait}">
+        <div class="links" [ngClass]="{'small': isPhonePortrait}" *ngFor="let link of linkItems" [innerHtml]="link"></div>
     </div>
-    <div class="login">
-        <div class="flex justify-content-end mini-container">
-            <div class="flex align-items-center justify-content-center button" id="inactiveButton">
+    <div class="flex justify-content-end login" [ngClass]="{'small': isPhonePortrait}">
+        <div class="flex justify-content-end align-items-center justify-content-center mini-container">
+            <div class="flex align-items-center justify-content-center button" id="inactiveButton" [ngClass]="{'small': isPhonePortrait}">
                 <span>Sign in</span>
             </div>
-            <div class="flex align-items-center justify-content-center button" id="activeButton">
+            <div class="flex align-items-center justify-content-center button" id="activeButton" [ngClass]="{'small': isPhonePortrait}">
                 <span>Get Started</span>
             </div>
         </div>
