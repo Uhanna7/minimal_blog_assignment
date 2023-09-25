@@ -1,3 +1,5 @@
+@import 'E:\MUNKA\origin_develop\minimal_blog_assignment\minimal_blog\src\assets\font.css';
+
 .container {
     height: auto;
     width: 100%;
@@ -5,7 +7,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins' !important;
     line-height: 1.5625rem;
 
     .login {
@@ -51,7 +53,7 @@
         width: 4.875rem;
         height: 1.5625rem;
         overflow: hidden;
-        font-family: 'Poppins', sans-serif !important;
+        font-family: 'Poppins' !important;
         line-height: 1.5625rem;
         font-weight: 500;
         font-size: 0.75rem;
