@@ -1,7 +1,7 @@
 <div class="grid justify-content-center gap-4 w-full">
   <div class="flex align-items-center justify-content-around w-9">
     <div class="flex w-screen">
-      <app-header class="w-screen"></app-header>
+      <app-header [ngClass]="{'header': isPhonePortrait}"></app-header>
     </div>
   </div>
   <div class="flex flex-wrap flex-column gap-5 w-screen content">

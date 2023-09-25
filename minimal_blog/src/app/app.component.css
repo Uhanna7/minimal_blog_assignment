@@ -1,5 +1,7 @@
 app-header {
     height: 5vh;
+    width: 75vw;
+    padding: 2rem 0 0 0;
 }
 
 app-footer {
@@ -13,6 +15,12 @@ app-image-slider {
 
 app-categories, app-card {
     height: 45vh;
+}
+
+.header {
+    height: 25vh;
+    width: 100vw;
+    padding: 0;
 }
 
 .columns {
