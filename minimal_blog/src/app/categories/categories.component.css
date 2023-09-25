@@ -1,12 +1,15 @@
 @import 'E:\MUNKA\origin_develop\minimal_blog_assignment\minimal_blog\src\assets\font.css';
 
 .container {
-    width: 65%;
+    font-family: 'Poppins' !important;
+}
+
+.content {
     float: right;
+    margin-left: 25rem;
 }
 
 .title {
-    font-family: 'Poppins' !important;
     font-weight: 700;
     font-size: 1.5625rem;
     line-height: 2.5rem;
@@ -14,17 +17,10 @@
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
-li {
-    font-family: 'Poppins' !important;
-    font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1.5625rem;
-}
-
-.search {
-    font-family: 'Poppins' !important;
+li, .search {
     font-weight: 500;
     font-size: 0.75rem;
     line-height: 1.5625rem;
