@@ -22,10 +22,18 @@
     font-size: 0.75rem
 }
 
+.center.small, .left.small, .right.small {
+    font-size: 0.5rem;
+}
+
 .vence {
     color: #F8F9FA;
     font-weight: 700;
     font-size: 1.25rem;
+}
+
+.vence.small {
+    font-size: 1rem;
 }
 
 .dott {
