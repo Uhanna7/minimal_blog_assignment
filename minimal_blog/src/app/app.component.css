@@ -5,7 +5,7 @@ app-header {
 }
 
 app-footer {
-    height: 30vh;
+    height: 27.5vh;
     background-color: #212529;
 }
 
@@ -15,6 +15,10 @@ app-image-slider {
 
 app-categories, app-card {
     height: 45vh;
+}
+
+app-paginator {
+    height: 2.5vh;
 }
 
 .header {

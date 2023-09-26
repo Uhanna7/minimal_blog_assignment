@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { CardComponent } from './card/card.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardComponent } from './card/card.component';
     FooterComponent,
     CategoriesComponent,
     ImageSliderComponent,
-    CardComponent
+    CardComponent,
+    PaginatorComponent
   ],
   imports: [
     BrowserModule,

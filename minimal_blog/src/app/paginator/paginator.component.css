@@ -1,0 +1,14 @@
+@import '../../assets/font.css';
+
+.nums {
+    color: rgba(73, 80, 87, 0.50);
+    font-size: 0.75rem;
+    font-family: 'Poppins' !important;
+    font-weight: 500;
+    line-height: 1.5625rem;
+}
+
+.nums.first {
+    text-decoration-line: underline;
+    text-decoration-color: #DDBEA9;
+}

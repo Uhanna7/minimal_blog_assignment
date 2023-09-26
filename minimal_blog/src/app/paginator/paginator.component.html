@@ -1,0 +1,3 @@
+<div class="flex flex-row align-items-center justify-content-center align-content-center gap-3 w-full h-full container">
+    <div class="nums" *ngFor="let item of pagenumbers; let i=index" [innerHtml]="item" [ngClass]="{'first': i == 0}"></div>
+</div>
