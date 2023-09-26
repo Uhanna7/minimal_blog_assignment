@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private responsive: BreakpointObserver) {
     this.linkItems = [
-      '<a id="res" href="..\app.component.html">Resources</a>',
+      '<a href="..\app.component.html">Resources</a>',
       '<a>Inspiration<i class="pi pi-angle-down"></i></a>',
       '<a>Courses<i class="pi pi-angle-down"></i></a>',
       '<a>Blog</a>'
@@ -26,7 +26,6 @@ export class HeaderComponent implements OnInit {
 
       if (result.matches) {
         this.isPhonePortrait = true;
-        console.log('appban vagyok');
       }
     });
   }

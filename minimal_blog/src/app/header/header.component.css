@@ -77,7 +77,32 @@
         font-size: 0.75rem;
         color: #49505780;
     }
+
+    .links > a:link {
+        color: #495057;
+        text-decoration-line: underline;
+        text-decoration-color: #DDBEA9;
+    }
+        
+    .links > a:visited {
+        color: #495057;
+        text-decoration-line: underline;
+        text-decoration-color: #DDBEA9;
+    }
+        
+    .links > a:hover {
+        color: #495057;
+        text-decoration-line: underline;
+        text-decoration-color: #DDBEA9;
+    }
+        
+    .links > a:active {
+        color: #495057;
+        text-decoration-line: underline;
+        text-decoration-color: #DDBEA9;
+    }
 }
+
 
 .nav.is-phone-portrait {
     display: flex;
