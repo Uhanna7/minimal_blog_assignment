@@ -7,7 +7,6 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-
 listItems: string[];
 isPhonePortrait = false;
 

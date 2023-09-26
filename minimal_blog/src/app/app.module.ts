@@ -9,6 +9,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ImageSliderComponent } from './image-slider/image-slider.component';
 import { CardComponent } from './card/card.component';
 import { PaginatorComponent } from './paginator/paginator.component';
+import { LazyLoadDirective } from './lazy-load.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
     CategoriesComponent,
     ImageSliderComponent,
     CardComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    LazyLoadDirective
   ],
   imports: [
     BrowserModule,

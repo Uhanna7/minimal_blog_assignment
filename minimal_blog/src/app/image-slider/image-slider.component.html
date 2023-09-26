@@ -4,7 +4,7 @@
             <img class="w-full h-full z-1" *ngIf="i === currentIndex" [src]="image" alt="Slide">
         </div>
         <div class="w-full h-full absolute z-5 content">
-            <div class="flex flex-column justify-content-around up">
+            <div class="flex flex-column justify-content-around w-full h-full relative up">
                 <div class="flex align-items-center justify-content-center">
                     <span class="text text1" [ngClass]="{'small1': isPhonePortrait}">Tomas Edwardo</span>
                 </div>
@@ -14,8 +14,7 @@
                     <i class="pi pi-chevron-right" (click)="nextSlide()"></i>
                 </div>
                 <div class="flex justify-content-center">
-                    <!-- <div class="flex align-content-center line" [ngClass]="{'smallpage': isPhonePortrait}"></div> -->
-                    <div class="page" [ngClass]="{'smallpage': isPhonePortrait}"> ----- 1/5</div>
+                    <div class="page" [ngClass]="{'smallpage': isPhonePortrait}">----- 1/5</div>
                 </div>
             </div>
         </div>

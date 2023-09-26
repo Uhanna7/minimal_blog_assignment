@@ -1,7 +1,6 @@
 @import '../../assets/font.css';
 
 .card {
-    gap: 2rem;
     font-family: 'Poppins' !important;
 }
 
@@ -37,8 +36,6 @@
 
 .line {
     border-top: 1px solid #E5E5E5;
-    width: 100%;
-    display: block;
 }
 
 .likes {

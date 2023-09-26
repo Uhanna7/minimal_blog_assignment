@@ -1,18 +1,10 @@
 @import '../../assets/font.css';
 
 .container {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
     font-family: 'Poppins' !important;
     line-height: 1.5625rem;
 
     .login {
-        width: 100%;
         font-weight: 500;
         font-size: 0.75rem;
         justify-content: flex-end;
@@ -24,7 +16,6 @@
     }
 
     .vence {
-        width: 100%;
         font-weight: 700;
         font-size: 1.125rem;
     }
@@ -36,21 +27,12 @@
     }
 }
 
-.seged {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.seged.is-phone-portrait {
+.head.is-phone-portrait {
     flex-direction: column;
     align-content: space-around;
 }
 
 .mini-container {
-    display: flex;
-    justify-content: end;
-    align-items: center;
 
     .button {
         width: 6.25rem;
@@ -65,7 +47,6 @@
 }
 
 .nav {
-    width: 100%;
 
     .links {
         width: 4.875rem;
@@ -105,7 +86,6 @@
 
 
 .nav.is-phone-portrait {
-    display: flex;
     flex-direction: column;
 }
 
