@@ -15,10 +15,12 @@
         width: 100%;
         font-weight: 500;
         font-size: 0.75rem;
+        justify-content: flex-end;
     }
 
-    .login.small {
-        font-size: 0.25rem;
+    .login.is-phone-portrait {
+        justify-content: center;
+        margin-top: 1rem
     }
 
     .vence {
@@ -29,22 +31,30 @@
 
     .vence.is-phone-portrait {
         justify-content: center;
+        font-size: 2rem;
+        margin: 1.5rem 0 1.5rem 0;
     }
 }
 
-.container.is-phone-portrait {
+.seged {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.seged.is-phone-portrait {
     flex-direction: column;
+    align-content: space-around;
 }
 
 .mini-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
     .button {
         width: 6.25rem;
         height: 2.5rem;
-    }
-
-    .button.small {
-        width: 3rem;
-        height: 1.5rem;
     }
 
     #activeButton {
@@ -66,10 +76,6 @@
         font-weight: 500;
         font-size: 0.75rem;
         color: #49505780;
-    }
-
-    .links.small {
-        font-size: 0.25rem;
     }
 }
 

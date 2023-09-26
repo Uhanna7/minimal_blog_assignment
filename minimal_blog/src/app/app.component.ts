@@ -18,7 +18,6 @@ export class AppComponent implements OnInit {
 
       if (result.matches) {
         this.isPhonePortrait = true;
-        console.log('appban vagyok');
       }
     });
   }
